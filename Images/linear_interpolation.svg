@@ -1,51 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="380.445" height="383.156" overflow="hidden">
-   <defs>
-      <clipPath id="prefix__a">
-         <path d="M467 191h414v408H467z" clip-rule="evenodd" fill-rule="evenodd"/>
-      </clipPath>
-   </defs>
-   <g clip-path="url(#prefix__a)" transform="translate(-472 -202.422)">
-      <path d="M493 248h245v247H493z" fill="#1884f0" fill-opacity=".2"/>
-      <path d="M772 249v83.533h-2V249zm3 82.2l-4 8-4-8zM492 221h145.646v-2H492zm144.312 3l8-4-8-4zM492 524h145.646v2H492zm144.312-3l8 4-8 4z" fill="#ed7d31"/>
-      <path d="M553.871 247.452v248.026m61.473-248.026v248.026m61.474-248.026v248.026M491.731 309.792h247.227m-247.227 61.673h247.227m-247.227 61.673h247.227M492.397 247.452v248.026m245.894-248.026v248.026m-246.56-247.36h247.227M491.731 494.811h247.227" stroke-miterlimit="10" fill="none" stroke="#1884f0" stroke-width="1.333" stroke-linejoin="round"/>
-      <path d="M490.5 247h339.458v3H490.5zm337.958-3l9 4.5-9 4.5z" fill="#7030a0"/>
-      <path d="M616 310h60v61h-60z" fill="#1884f0" fill-opacity=".502"/>
-      <text font-weight="400" font-size="21" transform="translate(842.533 249)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
-         x<tspan x="-361.788" y="332">y</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" height="381" width="439">
+   <g transform="translate(34 38) scale(250)">
+      <g transform="translate(0.25 0)">
+         <line x1="0.2" y1="0.04" x2="0.8" y2="0.04" stroke="orange" stroke-width="0.01"/>
+         <line x1="0.04" y1="0.2" x2="0.04" y2="0.56" stroke="orange" stroke-width="0.01"/>
+         <polygon points="0.06 0.52,0.04 0.57,0.02 0.52" fill="orange"/>
+         <polygon points="0.77 0.06,0.82 0.04,0.77 0.02" fill="orange"/>
+         <line x1="-0.005" y1="0" x2="1.31" y2="0" stroke="black" stroke-width="0.01"/>
+         <line x1="0" y1="0" x2="0" y2="1.31" stroke="black" stroke-width="0.01"/>
+         <line x1="-0.05" y1="0.2" x2="0.05" y2="0.2" stroke="black" stroke-width="0.01"/>
+         <line x1="-0.05" y1="0.575" x2="1.2" y2="0.575" stroke="red" stroke-width="0.01"/>
+         <line x1="0.2" y1="-0.05" x2="0.2" y2="0.05" stroke="black" stroke-width="0.01"/>
+         <line x1="0.825" y1="-0.05" x2="0.825" y2="1.2" stroke="red" stroke-width="0.01"/>
+         <polygon points="-0.025 1.3,0 1.37,0.025 1.3" fill="black"/>
+         <polygon points="1.3 -0.025,1.37 0,1.3 0.025" fill="black"/>
+         <text font-size="0.08" transform="translate(1.33 -0.03)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            x
+         </text>
+         <text font-size="0.08" transform="translate(-0.07 1.35)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            y
+         </text>
+         <g transform="translate(0.1 0.1)">
+            <g transform="translate(0.1 0.1)">
+               <!--This is the noise grid-->
+               <rect x="0" y="0" width="1" height="1" fill="rgba(0,0,255,0.1)" stroke="black" stroke-width="0.002"/>
+               <line x1="0" y1="0.25" x2="1" y2="0.25" stroke="black" stroke-width="0.002"/>
+               <line x1="0" y1="0.5" x2="1" y2="0.5" stroke="black" stroke-width="0.002"/>
+               <line x1="0" y1="0.75" x2="1" y2="0.75" stroke="black" stroke-width="0.002"/>
+               <line x1="0.25" y1="0" x2="0.25" y2="1" stroke="black" stroke-width="0.002"/>
+               <line x1="0.5" y1="0" x2="0.5" y2="1" stroke="black" stroke-width="0.002"/>
+               <line x1="0.75" y1="0" x2="0.75" y2="1" stroke="black" stroke-width="0.002"/>
+               <rect x="0.5" y="0.25" width="0.25" height="0.25" fill="rgba(0,0,255,0.4)"/>
+               <rect x="0.525" y="0.275" width="0.2" height="0.2" fill="purple" stroke-width="0.002" stroke="black"/>
+               <rect x="0.525" y="-0.1" width="0.2" height="0.2" fill="#a350a3" stroke-width="0.002" stroke="black"/>
+               <rect x="0.525" y="0.9" width="0.2" height="0.2" fill="#a350a3" stroke-width="0.002" stroke="black"/>
+            </g>
+            <rect x="0" y="0" width="0.2" height="0.2" fill="#eeaaee" stroke-width="0.002" stroke="black"/>
+            <rect x="1" y="0" width="0.2" height="0.2" fill="#eeaaee" stroke-width="0.002" stroke="black"/>
+            <rect x="0" y="1" width="0.2" height="0.2" fill="#eeaaee" stroke-width="0.002" stroke="black"/>
+            <rect x="1" y="1" width="0.2" height="0.2" fill="#eeaaee" stroke-width="0.002" stroke="black"/>
+         </g>
+      </g>
+      <text font-size="0.08" transform="translate(0.15 0.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         0
       </text>
-      <path stroke-miterlimit="8" d="M719.5 228.5h39v40h-39z" fill="#fff" stroke="#c00000"/>
-      <text font-weight="400" font-size="21" transform="translate(720.961 256)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
-         <tspan x="4.667" y="0">D</tspan> <tspan font-size="15" x="18.833" y="4">B</tspan>
+      <text fill="purple" font-size="0.08" transform="translate(-0.11 0.6)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         Y=0.375
       </text>
-      <path stroke-miterlimit="8" d="M719.5 475.5h39v40h-39z" fill="#fff" stroke="#c00000"/>
-      <text font-weight="400" font-size="21" transform="translate(721.289 503)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
-         <tspan x="4.667" y="0">D</tspan> <tspan font-size="15" x="18.833" y="4">C</tspan>
+      <text fill="purple" font-size="0.08" transform="translate(0.9 -0.07)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         X=0.625
       </text>
-      <path d="M646 216v310.776" stroke-miterlimit="8" fill="none" stroke="#000" stroke-width="2"/>
-      <text font-weight="400" font-size="19" transform="translate(776.143 297)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
-         Y<tspan x="-213.013" y="-82">X</tspan>
+      <text font-size="0.08" transform="translate(0.43 -0.07)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         0
       </text>
-      <path stroke-miterlimit="8" d="M627.5 228.5h39v39h-39z" fill="#fff" stroke="#c00000"/>
-      <text font-weight="400" font-size="21" transform="translate(628.503 256)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif" fill="#c00">
-         <tspan x="4.667" y="0">AB</tspan>
+      <text font-size="0.1" transform="translate(0.41 0.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         A
       </text>
-      <path stroke-miterlimit="8" d="M626.5 475.5h40v40h-40z" fill="#fff" stroke="#c00000"/>
-      <text font-weight="400" font-size="21" transform="translate(628.503 503)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif" fill="#c00">
-         <tspan x="4.667" y="0">DC</tspan> <tspan font-size="19" x="-65.373" y="16" fill="#000">X</tspan>
+      <text font-size="0.1" transform="translate(1.41 0.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         B
       </text>
-      <path d="M492 340h281.11" stroke-miterlimit="8" fill="none" stroke="#000" stroke-width="2"/>
-      <path stroke-miterlimit="8" d="M627.5 321.5h39v39h-39z" fill="#fff" stroke="#c00000"/>
-      <text font-weight="400" font-size="14" transform="translate(630.156 345)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif" fill="#c00">
+      <text fill="red" font-size="0.1" transform="translate(0.41 1.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         C
+      </text>
+      <text fill="red" font-size="0.1" transform="translate(1.41 1.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         D
+      </text>
+      <text font-size="0.1" transform="translate(1.01 0.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         AB
+      </text>
+      <text font-size="0.1" transform="translate(1.01 1.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         DC
+      </text>
+      <text fill="white" font-size="0.07" transform="translate(0.99 0.6)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
          ABDC
-      </text>
-      <path d="M491 214.5v343.56h3V214.5zm-3 342.06l4.5 9 4.5-9z" fill="#7030a0"/>
-      <path stroke-miterlimit="8" d="M472.5 228.5h40v40h-40z" fill="#fff" stroke="#c00000"/>
-      <text font-weight="400" font-size="21" transform="translate(474.389 256)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
-         <tspan x="4.667" y="0">D</tspan> <tspan font-size="15" x="18.833" y="4">A</tspan>
-      </text>
-      <path stroke-miterlimit="8" d="M472.5 475.5h39v40h-39z" fill="#fff" stroke="#c00000"/>
-      <text font-weight="400" font-size="21" transform="translate(473.731 503)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
-         <tspan x="4.667" y="0">D</tspan> <tspan font-size="15" x="18.833" y="4">D</tspan>
       </text>
    </g>
 </svg>

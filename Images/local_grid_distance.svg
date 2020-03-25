@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="423" width="405">
+    <g transform="translate(0 80) scale(250)">
+        <g transform="translate(0.25 0)">
+            <line x1="-0.005" y1="0" x2="1.31" y2="0" stroke="black" stroke-width="0.01"/>
+            <line x1="0" y1="0" x2="0" y2="1.31" stroke="black" stroke-width="0.01"/>
+            <line x1="-0.05" y1="0.2" x2="0.05" y2="0.2" stroke="black" stroke-width="0.01"/>
+            <line x1="-0.05" y1="0.325" x2="0.05" y2="0.325" stroke="black" stroke-width="0.01"/>
+            <line x1="-0.05" y1="0.575" x2="0.05" y2="0.575" stroke="black" stroke-width="0.01"/>
+            <line x1="-0.05" y1="0.825" x2="0.05" y2="0.825" stroke="black" stroke-width="0.01"/>
+            <line x1="-0.05" y1="1.075" x2="0.05" y2="1.075" stroke="black" stroke-width="0.01"/>
+            <line x1="0.2" y1="-0.05" x2="0.2" y2="0.05" stroke="black" stroke-width="0.01"/>
+            <line x1="0.325" y1="-0.05" x2="0.325" y2="0.05" stroke="black" stroke-width="0.01"/>
+            <line x1="0.575" y1="-0.05" x2="0.575" y2="0.05" stroke="black" stroke-width="0.01"/>
+            <line x1="0.825" y1="-0.05" x2="0.825" y2="0.05" stroke="black" stroke-width="0.01"/>
+            <line x1="1.075" y1="-0.05" x2="1.075" y2="0.05" stroke="black" stroke-width="0.01"/>
+            <polygon points="-0.025 1.3,0 1.37,0.025 1.3" fill="black"/>
+            <polygon points="1.3 -0.025,1.37 0,1.3 0.025" fill="black"/>
+            <text font-size="0.08" transform="translate(1.33 -0.03)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+                x
+            </text>
+            <text font-size="0.08" transform="translate(-0.07 1.35)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+                y
+            </text>
+            <g transform="translate(0.1 0.1)">
+                <g transform="translate(0.1 0.1)">
+                    <!--This is the noise grid-->
+                    <rect x="0" y="0" width="1" height="1" fill="rgba(0,0,255,0.1)" stroke="black" stroke-width="0.002"/>
+                    <line x1="0" y1="0.25" x2="1" y2="0.25" stroke="black" stroke-width="0.002"/>
+                    <line x1="0" y1="0.5" x2="1" y2="0.5" stroke="black" stroke-width="0.002"/>
+                    <line x1="0" y1="0.75" x2="1" y2="0.75" stroke="black" stroke-width="0.002"/>
+                    <line x1="0.25" y1="0" x2="0.25" y2="1" stroke="black" stroke-width="0.002"/>
+                    <line x1="0.5" y1="0" x2="0.5" y2="1" stroke="black" stroke-width="0.002"/>
+                    <line x1="0.75" y1="0" x2="0.75" y2="1" stroke="black" stroke-width="0.002"/>
+                    <rect x="0.5" y="0.25" width="0.25" height="0.25" fill="rgba(34,34,219,0.6)"/>
+                    <circle cx="0.125" cy="0.125" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.375" cy="0.125" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.625" cy="0.125" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.875" cy="0.125" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.125" cy="0.375" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.375" cy="0.375" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.875" cy="0.375" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.125" cy="0.625" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.375" cy="0.625" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.625" cy="0.625" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.875" cy="0.625" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.125" cy="0.875" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.375" cy="0.875" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.625" cy="0.875" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0.875" cy="0.875" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                </g>
+                <!--This is the gradient grid-->
+                <rect x="0" y="0" width="0.2" height="0.2" fill="rgba(255,0,0,0.8)" stroke-width="0.002" stroke="black"/>
+                <rect x="1" y="0" width="0.2" height="0.2" fill="rgba(255,0,0,0.8)" stroke-width="0.002" stroke="black"/>
+                <rect x="0" y="1" width="0.2" height="0.2" fill="rgba(255,0,0,0.8)" stroke-width="0.002" stroke="black"/>
+                <rect x="1" y="1" width="0.2" height="0.2" fill="rgba(255,0,0,0.8)" stroke-width="0.002" stroke="black"/>
+                <g transform="translate(0.1 0.1)">
+                    <!--This is the vectors-->
+                    <line x1="0" y1="0" x2="0.625" y2="0.375" stroke="navy" stroke-width="0.022" transform="scale(0.9)"/>
+                    <circle cx="0.625" cy="0.375" r="0.02" fill="#bebebe" stroke-width="0.002" stroke="black"/>
+                    <polygon points="0.6 0.3,0.625 0.375,0.65 0.3" fill="navy" transform="rotate(301 0.625 0.375)"/>
+                    <g transform="rotate(210 0 0)">
+                        <line x1="0" y1="0" x2="0" y2="0.5" stroke="#b10995" stroke-width="0.02"/>
+                        <polygon points="-0.025 0.47, 0 0.54, 0.025 0.47" fill="#b10995"/>
+                    </g>
+                    <circle cx="0" cy="0" r="0.02" fill="red" stroke-width="0.002" stroke="black"/>
+                    <circle cx="1" cy="0" r="0.02" fill="red" stroke-width="0.002" stroke="black"/>
+                    <circle cx="0" cy="1" r="0.02" fill="red" stroke-width="0.002" stroke="black"/>
+                    <circle cx="1" cy="1" r="0.02" fill="red" stroke-width="0.002" stroke="black"/>
+                </g>
+            </g>
+        </g>
+        <text font-size="0.08" transform="translate(0.15 0.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0
+        </text>
+        <text font-size="0.08" transform="translate(0 0.35)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0.125
+        </text>
+        <text font-size="0.08" transform="translate(0 0.6)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0.375
+        </text>
+        <text font-size="0.08" transform="translate(0 0.85)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0.625
+        </text>
+        <text font-size="0.08" transform="translate(0 1.1)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0.875
+        </text>
+        <text font-size="0.08" transform="translate(0.43 -0.07)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0
+        </text>
+        <text font-size="0.08" transform="translate(0.5 -0.07)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0.125
+        </text>
+        <text font-size="0.08" transform="translate(0.75 -0.07)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0.375
+        </text>
+        <text font-size="0.08" transform="translate(1 -0.07)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0.625
+        </text>
+        <text font-size="0.08" transform="translate(1.25 -0.07)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            0.875
+        </text>
+    </g>
+</svg>

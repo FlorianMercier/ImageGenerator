@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="409" width="409">
+  <g transform="translate(5 5) scale(400)">
+    <rect x="0" y="0" width="1" height="1" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0" y1="0.125" x2="1" y2="0.125" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0" y1="0.250" x2="1" y2="0.250" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0" y1="0.375" x2="1" y2="0.375" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0" y1="0.5" x2="1" y2="0.5" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0" y1="0.625" x2="1" y2="0.625" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0" y1="0.750" x2="1" y2="0.750" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0" y1="0.875" x2="1" y2="0.875" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0.125" y1="0" x2="0.125" y2="1" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0.250" y1="0" x2="0.250" y2="1" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0.375" y1="0" x2="0.375" y2="1" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0.5" y1="0" x2="0.5" y2="1" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0.625" y1="0" x2="0.625" y2="1" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0.750" y1="0" x2="0.750" y2="1" fill="none" stroke="gray" stroke-width="0.002"/>
+    <line x1="0.875" y1="0" x2="0.875" y2="1" fill="none" stroke="gray" stroke-width="0.002"/>
+    <circle cx="0.0625" cy="0.0625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.0625" cy="0.1875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.0625" cy="0.3125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.0625" cy="0.4375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.0625" cy="0.5625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.0625" cy="0.6875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.0625" cy="0.8125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.0625" cy="0.9375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.1875" cy="0.0625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.1875" cy="0.1875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.1875" cy="0.3125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.1875" cy="0.4375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.1875" cy="0.5625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.1875" cy="0.6875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.1875" cy="0.8125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.1875" cy="0.9375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.3125" cy="0.0625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.3125" cy="0.1875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.3125" cy="0.3125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.3125" cy="0.4375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.3125" cy="0.5625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.3125" cy="0.6875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.3125" cy="0.8125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.3125" cy="0.9375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.4375" cy="0.0625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.4375" cy="0.1875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.4375" cy="0.3125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.4375" cy="0.4375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.4375" cy="0.5625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.4375" cy="0.6875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.4375" cy="0.8125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.4375" cy="0.9375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.5625" cy="0.0625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.5625" cy="0.1875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.5625" cy="0.3125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.5625" cy="0.4375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.5625" cy="0.5625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.5625" cy="0.6875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.5625" cy="0.8125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.5625" cy="0.9375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.6875" cy="0.0625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.6875" cy="0.1875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.6875" cy="0.3125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.6875" cy="0.4375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.6875" cy="0.5625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.6875" cy="0.6875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.6875" cy="0.8125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.6875" cy="0.9375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.8125" cy="0.0625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.8125" cy="0.1875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.8125" cy="0.3125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.8125" cy="0.4375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.8125" cy="0.5625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.8125" cy="0.6875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.8125" cy="0.8125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.8125" cy="0.9375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.9375" cy="0.0625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.9375" cy="0.1875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.9375" cy="0.3125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.9375" cy="0.4375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.9375" cy="0.5625" r="0.01" fill="#bebebe"/>
+    <circle cx="0.9375" cy="0.6875" r="0.01" fill="#bebebe"/>
+    <circle cx="0.9375" cy="0.8125" r="0.01" fill="#bebebe"/>
+    <circle cx="0.9375" cy="0.9375" r="0.01" fill="#bebebe"/>
+    <circle cx="0.002218246" cy="0.002218246" r="0.01" fill="#2222db"/>
+    <circle cx="0.002218246" cy="0.048768997" r="0.01" fill="#2222db"/>
+    <circle cx="0.002218246" cy="0.180006027" r="0.01" fill="#2222db"/>
+    <circle cx="0.002218246" cy="0.384027481" r="0.01" fill="#2222db"/>
+    <circle cx="0.002218246" cy="0.615972519" r="0.01" fill="#2222db"/>
+    <circle cx="0.002218246" cy="0.819993973" r="0.01" fill="#2222db"/>
+    <circle cx="0.002218246" cy="0.951231003" r="0.01" fill="#2222db"/>
+    <circle cx="0.002218246" cy="0.997781754" r="0.01" fill="#2222db"/>
+    <circle cx="0.048768997" cy="0.002218246" r="0.01" fill="#2222db"/>
+    <circle cx="0.048768997" cy="0.048768997" r="0.01" fill="#2222db"/>
+    <circle cx="0.048768997" cy="0.180006027" r="0.01" fill="#2222db"/>
+    <circle cx="0.048768997" cy="0.384027481" r="0.01" fill="#2222db"/>
+    <circle cx="0.048768997" cy="0.615972519" r="0.01" fill="#2222db"/>
+    <circle cx="0.048768997" cy="0.819993973" r="0.01" fill="#2222db"/>
+    <circle cx="0.048768997" cy="0.951231003" r="0.01" fill="#2222db"/>
+    <circle cx="0.048768997" cy="0.997781754" r="0.01" fill="#2222db"/>
+    <circle cx="0.180006027" cy="0.002218246" r="0.01" fill="#2222db"/>
+    <circle cx="0.180006027" cy="0.048768997" r="0.01" fill="#2222db"/>
+    <circle cx="0.180006027" cy="0.180006027" r="0.01" fill="#2222db"/>
+    <circle cx="0.180006027" cy="0.384027481" r="0.01" fill="#2222db"/>
+    <circle cx="0.180006027" cy="0.615972519" r="0.01" fill="#2222db"/>
+    <circle cx="0.180006027" cy="0.819993973" r="0.01" fill="#2222db"/>
+    <circle cx="0.180006027" cy="0.951231003" r="0.01" fill="#2222db"/>
+    <circle cx="0.180006027" cy="0.997781754" r="0.01" fill="#2222db"/>
+    <circle cx="0.384027481" cy="0.002218246" r="0.01" fill="#2222db"/>
+    <circle cx="0.384027481" cy="0.048768997" r="0.01" fill="#2222db"/>
+    <circle cx="0.384027481" cy="0.180006027" r="0.01" fill="#2222db"/>
+    <circle cx="0.384027481" cy="0.384027481" r="0.01" fill="#2222db"/>
+    <circle cx="0.384027481" cy="0.615972519" r="0.01" fill="#2222db"/>
+    <circle cx="0.384027481" cy="0.819993973" r="0.01" fill="#2222db"/>
+    <circle cx="0.384027481" cy="0.951231003" r="0.01" fill="#2222db"/>
+    <circle cx="0.384027481" cy="0.997781754" r="0.01" fill="#2222db"/>
+    <circle cx="0.615972519" cy="0.002218246" r="0.01" fill="#2222db"/>
+    <circle cx="0.615972519" cy="0.048768997" r="0.01" fill="#2222db"/>
+    <circle cx="0.615972519" cy="0.180006027" r="0.01" fill="#2222db"/>
+    <circle cx="0.615972519" cy="0.384027481" r="0.01" fill="#2222db"/>
+    <circle cx="0.615972519" cy="0.615972519" r="0.01" fill="#2222db"/>
+    <circle cx="0.615972519" cy="0.819993973" r="0.01" fill="#2222db"/>
+    <circle cx="0.615972519" cy="0.951231003" r="0.01" fill="#2222db"/>
+    <circle cx="0.615972519" cy="0.997781754" r="0.01" fill="#2222db"/>
+    <circle cx="0.819993973" cy="0.002218246" r="0.01" fill="#2222db"/>
+    <circle cx="0.819993973" cy="0.048768997" r="0.01" fill="#2222db"/>
+    <circle cx="0.819993973" cy="0.180006027" r="0.01" fill="#2222db"/>
+    <circle cx="0.819993973" cy="0.384027481" r="0.01" fill="#2222db"/>
+    <circle cx="0.819993973" cy="0.615972519" r="0.01" fill="#2222db"/>
+    <circle cx="0.819993973" cy="0.819993973" r="0.01" fill="#2222db"/>
+    <circle cx="0.819993973" cy="0.951231003" r="0.01" fill="#2222db"/>
+    <circle cx="0.819993973" cy="0.997781754" r="0.01" fill="#2222db"/>
+    <circle cx="0.951231003" cy="0.002218246" r="0.01" fill="#2222db"/>
+    <circle cx="0.951231003" cy="0.048768997" r="0.01" fill="#2222db"/>
+    <circle cx="0.951231003" cy="0.180006027" r="0.01" fill="#2222db"/>
+    <circle cx="0.951231003" cy="0.384027481" r="0.01" fill="#2222db"/>
+    <circle cx="0.951231003" cy="0.615972519" r="0.01" fill="#2222db"/>
+    <circle cx="0.951231003" cy="0.819993973" r="0.01" fill="#2222db"/>
+    <circle cx="0.951231003" cy="0.951231003" r="0.01" fill="#2222db"/>
+    <circle cx="0.951231003" cy="0.997781754" r="0.01" fill="#2222db"/>
+    <circle cx="0.997781754" cy="0.002218246" r="0.01" fill="#2222db"/>
+    <circle cx="0.997781754" cy="0.048768997" r="0.01" fill="#2222db"/>
+    <circle cx="0.997781754" cy="0.180006027" r="0.01" fill="#2222db"/>
+    <circle cx="0.997781754" cy="0.384027481" r="0.01" fill="#2222db"/>
+    <circle cx="0.997781754" cy="0.615972519" r="0.01" fill="#2222db"/>
+    <circle cx="0.997781754" cy="0.819993973" r="0.01" fill="#2222db"/>
+    <circle cx="0.997781754" cy="0.951231003" r="0.01" fill="#2222db"/>
+    <circle cx="0.997781754" cy="0.997781754" r="0.01" fill="#2222db"/>
+  </g>
+</svg>
