@@ -17,6 +17,12 @@ The goal of this project is to randomly generate landscape images.
   - [Grids definitions](#grids-definitions)
   - [Dot Product](#dot-product)
   - [Interpolation in n dimensions](#interpolation-in-n-dimensions)
+- [Multi-Dimensional Worley Noise](#multi-dimensional-worley-noise)
+  - [Worley Noise](#worley-noise)
+  - [General algorithm](#general-algorithm)
+  - [Random points generation](#random-points-generation)
+  - [Distance Calculation](#distance-calculation)
+  - [Result](#result)
 - [Authors](#authors)
 
 ## Project environment
@@ -177,6 +183,52 @@ With all those steps a Perlin Noise grid is created. A harmonic random variation
 
 ![Perlin Noise 3D](Images/perlin_noise_3d.gif)
 >Figure 9: 3D Perlin Noise represented as a 2D slice moving along the 3rd dimension through time.
+
+## Multi-Dimensional Worley Noise
+
+### Worley Noise
+
+The Worley noise was created by Steven Worley in 1996. It generates a cellular aspect to imitate nature.
+
+- [More about Worley Noise](https://en.wikipedia.org/wiki/Worley_noise)
+
+![Cellular Noise](Images/cellular_noise.bmp)
+>Figure 10: 2D Worley noise.\
+>The cellular aspect is due to the "borders" between cells, created by an iso distance between two points.
+
+### General algorithm
+
+Worley noise generation has the following steps:
+
+- Create a n-dimensional grid which will contain the noise values.
+- Generate a list of random points in this grid.
+- For each cell of the grid, calculate the closest distance to the random points, it will represent the noise value.
+
+### Random points generation
+
+Let take a n-dimensional grid represented as a n-dimensional array of integers. To generate a random point in this grid it is needed to generate random integers representing the point's coordinates.\
+Here there are two possibilities:
+
+- Taking a random integer between 0 and the total number of cells and calculate the n different coordinates.
+- Taking n random integers from 0 to the size of the grid for all its dimensions. Those n numbers are the n coordinates.
+
+![Random Points Generation](Images/random_points_grid.svg)
+>Figure 11: 2D noise grid and several randomly generated points.
+
+### Distance Calculation
+
+For every cell let's compute the closest distance to the random points. The distance between two points is the square root of the sum of every difference of their coordinates to the square. It is faster to compare squared distances to avoid the square root operations.
+
+![Distance Calculation](Images/distance_calculation.svg)
+>Figure 12: Distances between a given noise cell and all the random points.
+>The closest distance is represented in red. It will be the value of the noise cell.
+
+### Result
+
+This algorithm creates a cellular noise. The value of the noise increases as it gets far from a random point then decreases as it comes closer to another one. The iso distance from a point can be seen as circles of the same value around the points.
+
+![3D Cellular Noise](Images/cellular_noise_3d.gif)
+>Figure 13: 3D Worley Noise represented as a 2D slice moving along the 3rd dimension through time.
 
 ## Authors
 

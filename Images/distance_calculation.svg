@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="402" width="402">
+    <g transform="translate(1 1) scale(400)">
+        <!--This is the noise grid-->
+        <rect x="0" y="0" width="1" height="1" fill="rgba(0,0,255,0.1)" stroke="black" stroke-width="0.002"/>
+        <line x1="0" y1="0.125" x2="1" y2="0.125" stroke="black" stroke-width="0.002"/>
+        <line x1="0" y1="0.250" x2="1" y2="0.250" stroke="black" stroke-width="0.002"/>
+        <line x1="0" y1="0.375" x2="1" y2="0.375" stroke="black" stroke-width="0.002"/>
+        <line x1="0" y1="0.5" x2="1" y2="0.5" stroke="black" stroke-width="0.002"/>
+        <line x1="0" y1="0.625" x2="1" y2="0.625" stroke="black" stroke-width="0.002"/>
+        <line x1="0" y1="0.750" x2="1" y2="0.750" stroke="black" stroke-width="0.002"/>
+        <line x1="0" y1="0.875" x2="1" y2="0.875" stroke="black" stroke-width="0.002"/>
+        <line x1="0.125" y1="0" x2="0.125" y2="1" stroke="black" stroke-width="0.002"/>
+        <line x1="0.250" y1="0" x2="0.250" y2="1" stroke="black" stroke-width="0.002"/>
+        <line x1="0.375" y1="0" x2="0.375" y2="1" stroke="black" stroke-width="0.002"/>
+        <line x1="0.5" y1="0" x2="0.5" y2="1" stroke="black" stroke-width="0.002"/>
+        <line x1="0.625" y1="0" x2="0.625" y2="1" stroke="black" stroke-width="0.002"/>
+        <line x1="0.750" y1="0" x2="0.750" y2="1" stroke="black" stroke-width="0.002"/>
+        <line x1="0.875" y1="0" x2="0.875" y2="1" stroke="black" stroke-width="0.002"/>
+        <text font-size="0.04" transform="translate(0.02 0.08)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            [0,0]
+        </text>
+        <text font-size="0.04" transform="translate(0.145 0.08)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            [1,0]
+        </text>
+        <text font-size="0.04" transform="translate(0.02 0.205)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            [0,1]
+        </text>
+        <rect x="0.5" y="0.625" width="0.125" height="0.125" fill="rgba(0,0,255,0.1)" stroke="black" stroke-width="0.002"/>
+        <line x1="0.5625" y1="0.6875" x2="0.4375" y2="0.3125" stroke="navy" stroke-width="0.004"/>
+        <line x1="0.5625" y1="0.6875" x2="0.8125" y2="0.8125" stroke="red" stroke-width="0.004"/>
+        <line x1="0.5625" y1="0.6875" x2="0.1875" y2="0.9375" stroke="navy" stroke-width="0.004"/>
+        <line x1="0.5625" y1="0.6875" x2="0.1875" y2="0.4375" stroke="navy" stroke-width="0.004"/>
+        <line x1="0.5625" y1="0.6875" x2="0.8125" y2="0.1875" stroke="navy" stroke-width="0.004"/>
+        <circle cx="0.5625" cy="0.6875" r="0.01" fill="black" stroke-width="0.002" stroke="black"/>
+        <!--This is the random points-->
+        <circle cx="0.4375" cy="0.3125" r="0.01" fill="red" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.8125" cy="0.8125" r="0.01" fill="red" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.1875" cy="0.9375" r="0.01" fill="red" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.1875" cy="0.4375" r="0.01" fill="red" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.8125" cy="0.1875" r="0.01" fill="red" stroke-width="0.002" stroke="black"/>
+    </g>
+</svg>
