@@ -58,11 +58,11 @@
       <text font-size="0.1" transform="translate(1.41 0.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
          B
       </text>
-      <text fill="red" font-size="0.1" transform="translate(0.41 1.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
-         C
-      </text>
-      <text fill="red" font-size="0.1" transform="translate(1.41 1.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+      <text font-size="0.1" transform="translate(0.41 1.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
          D
+      </text>
+      <text font-size="0.1" transform="translate(1.41 1.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+         C
       </text>
       <text font-size="0.1" transform="translate(1.01 0.225)" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
          AB
