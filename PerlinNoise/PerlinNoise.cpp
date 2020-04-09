@@ -44,9 +44,21 @@ float PerlinNoise::smootherStep(const float x)
 float PerlinNoise::normalizeNoiseValue(const float noiseValue)
 {
     // Sigmoid normalization
-    return 1 / (1 + exp(-5 * noiseValue));
+    // return 1 / (1 + exp(-5 * noiseValue));
     // Linear normalization
-    // return (1 + noiseValue) / 2;
+    return (1 + noiseValue) / 2;
+    // Rigged noise
+    // return std::abs(noiseValue);
+    /*if(std::abs(noiseValue) > (float) 0.1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }*/
+    // No treatment
+    // return noiseValue;
 }
 
 float PerlinNoise::dotProduct(const float* gradientVector, const float* coordinates, const unsigned int dimension)

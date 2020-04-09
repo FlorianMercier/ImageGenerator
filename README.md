@@ -27,6 +27,9 @@ The goal of this project is to randomly generate landscape images.
   - [Random points generation](#random-points-generation)
   - [Distance Calculation](#distance-calculation)
   - [Result](#result-1)
+- [Rigged Noise](#rigged-noise)
+  - [Rigged Noise algorithm](#rigged-noise-algorithm)
+  - [Result](#result-2)
 - [Authors](#authors)
 
 ## Project environment
@@ -281,6 +284,26 @@ This algorithm creates a cellular noise. The value of the noise increases as it 
 
 ![3D Cellular Noise](Images/cellular_noise_3d.gif)
 >Figure 15: 3D Worley Noise represented as a 2D slice moving along the 3rd dimension through time.
+
+## Rigged Noise
+
+### Rigged Noise algorithm
+
+A rigged noise is a modified noise. It takes any kind of noise and do a symmetry on it from a chosen median value. For example, to a Perlin Noise going from value -1 to 1, its absolute value is a rigged noise with a median value of 0. This technic creates a more rigged kind of noise, with more sharp values around the median.
+
+![Rigged](Images/rigged.svg)
+>Figure 16: Rigged curve in orange from the original blue curve.\
+>An axial symmetry is applied around the chosen value.
+
+### Result
+
+![Rigged Perlin Noise](Images/rigged_perlin_noise2d.bmp)
+>Figure 17: Rigged Perlin Noise
+
+It is possible to choose a threshold value in the noise values range. Above this value the noise will be changed to its minimum and under to its maximum. It will create a floored effect, where there are only 2 colors creating shapes and paths.
+
+![Rigged Floored Perlin Noise](Images/rigged_floored_perlin_noise2d.bmp)
+>Figure 18: Rigged then floored Perlin Noise
 
 ## Authors
 
