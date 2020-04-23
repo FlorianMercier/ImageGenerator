@@ -30,6 +30,13 @@ The goal of this project is to randomly generate landscape images.
 - [Rigged Noise](#rigged-noise)
   - [Rigged Noise algorithm](#rigged-noise-algorithm)
   - [Result](#result-2)
+- [Multi-Dimensional Space Colonization](#multi-dimensional-space-colonization)
+  - [Space Colonization](#space-colonization)
+  - [General algorithm](#general-algorithm-2)
+  - [Growing Algorithm](#growing-algorithm)
+  - [Parameters influence](#parameters-influence)
+  - [Main Issue](#main-issue)
+  - [Result](#result-3)
 - [Authors](#authors)
 
 ## Project environment
@@ -307,6 +314,124 @@ It is possible to choose a threshold value in the noise values range. Above this
 
 ![Rigged Floored Perlin Noise](Images/rigged_floored_perlin_noise3d.gif)
 >Figure 19: 3D Rigged then floored Perlin Noise represented as a 2D slice moving along the 3rd dimension through time.
+
+## Multi-Dimensional Space Colonization
+
+### Space Colonization
+
+Space colonization is an iterative process of growing branches toward attractive points randomly distributed. It simulates a living organism aspect of filling a n-dimensional space. It is used to generate the natural growth of tree-like structures or vein-like systems.
+
+- [More about Space Colonization Algorithm](http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf)
+
+![Blob](Images/tree2D.svg)
+>Figure 20: 2D Space Colonization started with three seeds.
+
+### General algorithm
+
+Space Colonization has the following steps:
+
+- Generate N randomly distributed points in a n-dimensional space.
+- Create at least one branch.
+  - A branch is a segment with a starting point and an ending point.
+  - A branch is said active when it is currently looking for near attractive points to grow toward.
+  - A branch is said inactive when it is not growing anymore because there is no more reachable attractive point.
+- Loop while there is at least one active branch:
+  - For each active branch:
+    - Get all the active points closer than a chosen maximum distance.
+    - Only keep those which are closer to the current branch than any other branch.
+    - Calculate the vectors between the branch ending point and these attractive points.
+    - Compute the average vector and normalize it.
+    - Add a small perturbation vector (to take weight into account for instance).
+    - Normalize it and multiply it by the chosen growing step (the size of each branch).
+    - Create a new branch:
+      - The current ending point is its new starting point.
+      - Add the previously computed vector to get its new ending point.
+  - Delete every attractive point considered reached (if the current point is closer to it than a chosen minimum distance).
+  - Deactivate every branch ending point that has not at least one attractive point within range.
+
+### Growing Algorithm
+
+Let's chose a 2D space where some points have been randomly generated and some branches have been created. Figures 21 and 22 represent some steps of the growing algorithm.
+
+- In orange: attractive points out of reach for any active branch points.
+- In blue: attractive points within the range of interest of at least one branch.
+- In red: attractive points reached by a branch point, they will be removed at the end of the step.
+- In yellow: active branch points.
+- in black: inactive branch points.
+
+![Space Colonization Step 1](Images/space_colonization_step1.svg)
+>Figure 21: Space Colonization, step n.
+
+The active branch point 1 has two attractive points A and B in its range. It is the closest active branch point from them. Therefore the new growing vector from point 1 is the normalized average vector of (1,B) and (1,A). Point A has been reached, so it will be removed.
+
+The active branch point 2 has one point in its range. But 2 is not the closest active point for E, so it will not be taken into account and 2 is not producing any new branch. However, it can stay active for the next iteration because the point E is still in range.
+
+The active branch point 3 has C, D and E in range and they are closer from it than any other branch point. The growing vector is the normalized average of (3,C), (3,D) and (3,E).
+
+![Space Colonization Step 2](Images/space_colonization_step2.svg)
+>Figure 22: Space Colonization, step n+1.
+
+At the end of this iteration, two new branches from 1 and 3 are added. Every active point stayed active. Now the two new yellow branch points have to be taken into account and new growing vectors have to be calculated. Here are the two new radii of influence. Attractive point D has now been reached.
+The algorithm has to be continued until no more active point are left.
+
+### Parameters influence
+
+The general aspect of the tree can be modified by the value of different parameters. This is by changing those structural variables that many different kinds and types of trees can be created. Here the list of these parameters.
+
+| Parameters                            | Default Value (in unity) |
+| :------------------------------------ | :----------------------- |
+| Number of attractive points generated | 1000                     |
+| Growing step size                     | 2                        |
+| Maximum attractive distance           | 70                       |
+| Minimum reached distance              | 5                        |
+| Perturbation vector (weight,...)      | 0                        |
+| Shape of the generating area          | circle of radius 300     |
+
+The following section will highlight the influence of each parameter. First, a representation of a default tree as a reference and then, by order of appearance, two different values of one parameter.
+
+![Default tree](Images/tree_reference.svg)
+>Figure 23: Reference tree, the value of each parameter is the default one.
+
+![Number of attractive points](Images/trees_compare_attractive_points_number.svg)
+>Figure 24: 200 attractive points (left) compared to 2000 (right).
+
+![Growing step size](Images/trees_compare_step_size.svg)
+>Figure 25: A growing step size of 1 (left) compared to 10 (right).
+
+![Maximum attractive distance](Images/trees_compare_max_effective_size.svg)
+>Figure 26: A radius of effective attractiveness of 25 (left) compared to infinit (right) where all points can be seen.
+
+![Minimum reached distance](Images/trees_compare_min_reached_size.svg)
+>Figure 27: A distance where points are considered reached of 1 (left) compared to 20 (right).
+
+![Perturbation vector](Images/trees_compare_weight_value.svg)
+>Figure 28: A vertical perturbation vector of 30% that is negative (left) compared to a positive one (right).
+
+![Shape of the generating area](Images/trees_compare_shape.svg)
+>Figure 29: A square shape of repartition of attractive points (left) compared to a ring one (right).
+
+### Main Issue
+
+This algorithm has two well-known issues, making it iterate forever. If some attractive points are equally distributed at both sides of a branch, the next branch will grow toward the middle of them and will not get any closer from any attractive point. The next step will be in the same situation and the branch will grow back to its starting point. The process will then never end, causing an infinite loop.
+
+![Infinite loop issue](Images/space_colonization_issue1.svg)
+>Figure 30: Infinite blinking between two branches.
+
+The branch point 1 will grow toward 2 as A and B are equally distributed at both sides. Then from point 2 it will grow toward 1 and this symmetric situation will last forever. To avoid this case, a solution is to forbid branches to grow backward.
+
+Another situation could be a newly grown branch whom ending point gets further from the remaining attractive points. Indeed, this branch would be deactivated, and the previous branch would grow into a new one at the same position. Then the same thing would occur over and over : the new branch disappears and the old one creates the same new one.
+
+![Infinite loop issue](Images/space_colonization_issue2.svg)
+>Figure 31: Infinite growing of the same branch.
+
+Here the branch at point 1 will grow toward 2. But then, 2 will be further from A and B than 1, so 2 will be deactivated and 1 will grow to 2 again and again. A way to avoid this case is to let branches remember where they have created a new branch and forbid them to create the same new branch twice. Instead, they get deactivated because they will not help to colonize the space anymore.
+
+### Result
+
+This algorithm is efficient at making trees very resembling what nature could create.
+
+![Tree 3D](Images/tree3D.svg)
+>Figure 32: 3D tree splashed into 2D built using space colonization algorithm.
 
 ## Authors
 

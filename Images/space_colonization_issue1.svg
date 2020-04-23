@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="360" width="250">
+    <g transform="translate(-125 -70) scale(500)">
+        <line x1="0.5" y1="0.2" x2="0.5" y2="0.8" stroke="#a5a5a5" stroke-width="0.015"/>
+        <line x1="0.5" y1="0.2" x2="0.5" y2="0.5" stroke="black" stroke-width="0.005"/>
+        <line x1="0.5" y1="0.2" x2="0.3" y2="0.5" stroke="blue" stroke-width="0.008"/>
+        <line x1="0.5" y1="0.2" x2="0.7" y2="0.5" stroke="blue" stroke-width="0.008"/>
+        <polygon points="0.49 0.5,0.5 0.53,0.51 0.5" fill="black"/>
+        <circle cx="0.5" cy="0.2" r="0.01" fill="yellow" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.5" cy="0.8" r="0.01" fill="yellow" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.3" cy="0.5" r="0.01" fill="blue" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.7" cy="0.5" r="0.01" fill="blue" stroke-width="0.002" stroke="black"/>
+        <text font-size="0.04" transform="translate(0.488 0.17)" fill="black" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            1
+        </text>
+        <text font-size="0.04" transform="translate(0.488 0.85)" fill="black" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            2
+        </text>
+        <text font-size="0.04" transform="translate(0.25 0.515)" fill="navy" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            A
+        </text>
+        <text font-size="0.04" transform="translate(0.72 0.515)" fill="navy" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            B
+        </text>
+    </g>
+</svg>

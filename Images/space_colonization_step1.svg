@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="458" width="413">
+    <g transform="translate(-44 -94) scale(500)">
+        <!--This is the range area-->
+        <circle cx="0.4" cy="0.8" r="0.3" fill="rgba(0,225,255,0.1)" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.6" cy="0.6" r="0.3" fill="rgba(0,4,255,0.1)" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.55" cy="0.75" r="0.3" fill="rgba(217,0,255,0.1)" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.4" cy="0.8" r="0.1" fill="rgba(0,225,255,0.1)" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.6" cy="0.6" r="0.1" fill="rgba(0,4,255,0.1)" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.55" cy="0.75" r="0.1" fill="rgba(217,0,255,0.1)" stroke-width="0.002" stroke="black"/>
+        <!--This is the tree branch-->
+        <line x1="0.4" y1="0.8" x2="0.55" y2="0.75" stroke="black" stroke-width="0.008"/>
+        <line x1="0.6" y1="0.6" x2="0.55" y2="0.75" stroke="black" stroke-width="0.008"/>
+        <line x1="0.55" y1="0.75" x2="0.6" y2="0.9" stroke="black" stroke-width="0.008"/>
+        <line x1="0.6" y1="0.9" x2="0.6" y2="1.05" stroke="black" stroke-width="0.008"/>
+        <!--This is the line of interest-->
+        <line x1="0.4" y1="0.8" x2="0.35" y2="0.8" stroke="red" stroke-width="0.005"/>
+        <line x1="0.4" y1="0.8" x2="0.25" y2="0.6" stroke="blue" stroke-width="0.005"/>
+        <line x1="0.6" y1="0.6" x2="0.6" y2="0.35" stroke="blue" stroke-width="0.005"/>
+        <line x1="0.6" y1="0.6" x2="0.4" y2="0.45" stroke="blue" stroke-width="0.005"/>
+        <line x1="0.6" y1="0.6" x2="0.75" y2="0.6" stroke="blue" stroke-width="0.005"/>
+        <line x1="0.55" y1="0.75" x2="0.75" y2="0.6" stroke="green" stroke-width="0.005"/>
+        <!--This is the growing vector-->
+        <line x1="0.4" y1="0.8" x2="0.3" y2="0.7" stroke="gray" stroke-width="0.005"/>
+        <line x1="0.6" y1="0.6" x2="0.58" y2="0.45" stroke="gray" stroke-width="0.005"/>
+        <!--This is the tree point-->
+        <circle cx="0.4" cy="0.8" r="0.01" fill="yellow" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.6" cy="0.6" r="0.01" fill="yellow" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.55" cy="0.75" r="0.01" fill="yellow" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.6" cy="0.9" r="0.01" fill="black" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.6" cy="1.05" r="0.01" fill="black" stroke-width="0.002" stroke="black"/>
+        <!--This is the random points-->
+        <circle cx="0.45" cy="0.3" r="0.01" fill="orange" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.75" cy="0.6" r="0.01" fill="blue" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.25" cy="0.6" r="0.01" fill="blue" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.2" cy="0.4" r="0.01" fill="orange" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.8" cy="0.2" r="0.01" fill="orange" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.6" cy="0.35" r="0.01" fill="blue" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.1" cy="0.6" r="0.01" fill="orange" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.4" cy="0.45" r="0.01" fill="blue" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.35" cy="0.8" r="0.01" fill="red" stroke-width="0.002" stroke="black"/>
+        <circle cx="0.9" cy="0.4" r="0.01" fill="orange" stroke-width="0.002" stroke="black"/>
+        <text font-size="0.04" transform="translate(0.31 0.8)" fill="red" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            A
+        </text>
+        <text font-size="0.04" transform="translate(0.21 0.6)" fill="navy" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            B
+        </text>
+        <text font-size="0.04" transform="translate(0.36 0.45)" fill="navy" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            C
+        </text>
+        <text font-size="0.04" transform="translate(0.56 0.34)" fill="navy" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            D
+        </text>
+        <text font-size="0.04" transform="translate(0.73 0.58)" fill="navy" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            E
+        </text>
+        <text font-size="0.04" transform="translate(0.41 0.83)" fill="black" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            1
+        </text>
+        <text font-size="0.04" transform="translate(0.57 0.78)" fill="black" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            2
+        </text>
+        <text font-size="0.04" transform="translate(0.6 0.65)" fill="black" font-family="'Cambria Math','Cambria Math_MSFontService',sans-serif">
+            3
+        </text>
+    </g>
+</svg>
