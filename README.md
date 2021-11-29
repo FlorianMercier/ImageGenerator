@@ -79,20 +79,35 @@ The first header contains general information about the file.
 ### Bitmap information header
 
 The second header contains information about the image.
+Here the structure of the latest header named BITMAPV5HEADER:
+- [More about the BITMAPV5HEADER](https://docs.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-bitmapv5header)
 
-| Offset | Size (Bytes) | Purpose                                        | Value (decimal) |
-| :----: | :----------: | :--------------------------------------------- | :-------------: |
-|   14   |      4       | Size of this header in bytes                   |       40        |
-|   18   |      4       | Bitmap width in pixels                         |        *        |
-|   22   |      4       | Bitmap height in pixels                        |        *        |
-|   26   |      2       | Number of color planes                         |        1        |
-|   28   |      2       | Number of bits per pixel (rgb 3x8)             |       24        |
-|   30   |      4       | Compression method being used                  |        0        |
-|   34   |      4       | Image size                                     |        0        |
-|   38   |      4       | Image horizontal resolution in pixel per meter |        0        |
-|   42   |      4       | Image vertical resolution in pixel per meter   |        0        |
-|   46   |      4       | Number of colors                               |        0        |
-|   50   |      4       | Number of important colors                     |        0        |
+| Offset | Size (Bytes) | Purpose                                        |           Value (decimal)            |
+| :----: | :----------: | :--------------------------------------------- | :----------------------------------: |
+|   14   |      4       | Size of this header in bytes                   |                  40                  |
+|   18   |      4       | Bitmap width in pixels                         |                  *                   |
+|   22   |      4       | Bitmap height in pixels                        |                  *                   |
+|   26   |      2       | Number of color planes                         |                  1                   |
+|   28   |      2       | Number of bits per pixel                       |  (rgb 3x8) 24 or (transparency) 32   |
+|   30   |      4       | Compression method being used                  | BI_BITFIELDS = 3 no compression used |
+|   34   |      4       | Image size including padding                   |                  *                   |
+|   38   |      4       | Image horizontal resolution in pixel per meter |   72 DPI × 39.3701 i/m = 2834.6472   |
+|   42   |      4       | Image vertical resolution in pixel per meter   |   72 DPI × 39.3701 i/m = 2834.6472   |
+|   46   |      4       | Number of colors in the palette                |                  0                   |
+|   50   |      4       | Number of important colors                     |   0 means all colors are important   |
+|   54   |      4       | Red channel bit mask                           |              0x00FF0000              |
+|   58   |      4       | Green channel bit mask                         |              0x0000FF00              |
+|   62   |      4       | Blue channel bit mask                          |              0x000000FF              |
+|   66   |      4       | Alpha channel bit mask                         |              0xFF000000              |
+|   70   |      4       | Color Space Type                               | 0x73524742 little-endian for "Win "  |
+|   74   |      36      | Color Space Endpoints                          |  0 Unused for LCS "Win " or "sRGB"   |
+|  110   |      4       | Red Gamma                                      |  0 Unused for LCS "Win " or "sRGB"   |
+|  114   |      4       | Green Gamma                                    |  0 Unused for LCS "Win " or "sRGB"   |
+|  118   |      4       | Blue Gamma                                     |  0 Unused for LCS "Win " or "sRGB"   |
+|  122   |      4       | Intent                                         |                  0                   |
+|  126   |      4       | ICC ProfileData                                |                  0                   |
+|  130   |      4       | ICC ProfileSize                                |                  0                   |
+|  134   |      4       | Reserved                                       |                  0                   |
 
 ### Pixel structure
 
