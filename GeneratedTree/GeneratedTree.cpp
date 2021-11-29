@@ -13,9 +13,9 @@ GeneratedTree::~GeneratedTree()
 {
 }
 
-double GeneratedTree::getUniformRandom(const double highLimit, const double lowLimite)
+double GeneratedTree::getUniformRandom(const double highLimit, const double lowLimit)
 {
-    return lowLimite + static_cast<double>(rand()) / (static_cast<double>(RAND_MAX / (highLimit - lowLimite)));
+    return lowLimit + static_cast<double>(rand()) / (static_cast<double>(RAND_MAX / (highLimit - lowLimit)));
 }
 
 bool isInside(const Point& point, const unsigned int dimension, const double size)

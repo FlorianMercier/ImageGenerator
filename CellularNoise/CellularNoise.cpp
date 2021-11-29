@@ -11,9 +11,9 @@ CellularNoise::~CellularNoise()
 {
 }
 
-float CellularNoise::getUniformRandom(const float highLimit, const float lowLimite)
+float CellularNoise::getUniformRandom(const float highLimit, const float lowLimit)
 {
-    return lowLimite + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (highLimit - lowLimite)));
+    return lowLimit + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (highLimit - lowLimit)));
 }
 
 void CellularNoise::generateRandomCells(unsigned int* cellsGrid,
@@ -21,7 +21,7 @@ void CellularNoise::generateRandomCells(unsigned int* cellsGrid,
                                         const unsigned int* tabSizes,
                                         const unsigned int nbOfCells)
 {
-    // Initialize the pseudo random fonction rand for different result every iteration
+    // Initialize the pseudo random function rand for different result every iteration
     srand(time(NULL));
     for(unsigned int i = 0; i < nbOfCells; i++)
     {

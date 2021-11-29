@@ -20,7 +20,7 @@ class GeneratedTree
     GeneratedTree();
     ~GeneratedTree();
     // Return an uniform random value between given high and low limits
-    static double getUniformRandom(const double highLimit, const double lowLimite);
+    static double getUniformRandom(const double highLimit, const double lowLimit);
     // Return a point with coordinates within a chosen n-dimensional shape
     static Point getShapedRandomPoint(const unsigned int dimension, const double size);
     // Fill a vector of randomly generated points within a n-dimensional shape

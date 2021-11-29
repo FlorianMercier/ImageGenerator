@@ -12,20 +12,20 @@ PerlinNoise::~PerlinNoise()
 {
 }
 
-float PerlinNoise::getUniformRandom(const float highLimit, const float lowLimite)
+float PerlinNoise::getUniformRandom(const float highLimit, const float lowLimit)
 {
-    return lowLimite + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (highLimit - lowLimite)));
+    return lowLimit + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (highLimit - lowLimit)));
 }
 
 void PerlinNoise::getNormalRandomVector(const float highLimit,
-                                        const float lowLimite,
+                                        const float lowLimit,
                                         const unsigned int dimension,
                                         float* vector)
 {
     float normSquared(0);
     for(unsigned int i = 0; i < dimension; i++)
     {
-        vector[i] = getUniformRandom(highLimit, lowLimite);
+        vector[i] = getUniformRandom(highLimit, lowLimit);
         normSquared += vector[i] * vector[i];
     }
 
@@ -155,7 +155,7 @@ unsigned int PerlinNoise::getRankGrad(const unsigned int dimension,
 
 void PerlinNoise::generateGradientGrid(float* gradientGrid, const unsigned int dimension, const unsigned int totalSize)
 {
-    // Initialize the pseudo random fonction rand for different result every iteration
+    // Initialize the pseudo random function rand for different result every iteration
     srand(time(NULL));
 
     float* vector = new float[dimension]();
@@ -255,7 +255,7 @@ void PerlinNoise::generatePerlinGrid(float* perlinGrid,
     // Number of distance vectors between the edges of the grid and the point
     const unsigned int nbOfVectors = (unsigned int) std::pow(2u, dimension);
 
-    // Max lengh used to normalize distance vectors
+    // Max length used to normalize distance vectors
     const float norm = std::sqrt(((float) frequency - (float) 1) / ((float) frequency));
 
     // Create distance vectors sigma function

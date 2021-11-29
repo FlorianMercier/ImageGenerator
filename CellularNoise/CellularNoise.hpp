@@ -4,7 +4,7 @@
 class CellularNoise
 {
   public:
-    // Generate a n-dimensional cellular noise into a n-dimentional array with a given number of cells
+    // Generate a n-dimensional cellular noise into a n-dimensional array with a given number of cells
     static void generateCellularGrid(float* cellularGrid,
                                      const unsigned int* tabSizes,
                                      const unsigned int nbOfCells,
@@ -16,9 +16,9 @@ class CellularNoise
     ~CellularNoise();
 
     // Return an uniform random value between given high and low limits
-    static float getUniformRandom(const float highLimit, const float lowLimite);
+    static float getUniformRandom(const float highLimit, const float lowLimit);
 
-    // Generate random coordonates of a given number of cells.
+    // Generate random coordinates of a given number of cells.
     static void generateRandomCells(unsigned int* cellsGrid,
                                     const unsigned int dimension,
                                     const unsigned int* tabSizes,

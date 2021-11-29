@@ -4,7 +4,7 @@
 class PerlinNoise
 {
   public:
-    // Generate a n-dimensional perlin noise into a n-dimentional array with a given frequency
+    // Generate a n-dimensional perlin noise into a n-dimensional array with a given frequency
     static void generatePerlinGrid(float* perlinGrid,
                                    const unsigned int* tabSizes,
                                    const unsigned int frequency,
@@ -16,13 +16,11 @@ class PerlinNoise
     ~PerlinNoise();
 
     // Return an uniform random value between given high and low limits
-    static float getUniformRandom(const float highLimit, const float lowLimite);
+    static float getUniformRandom(const float highLimit, const float lowLimit);
 
     // Fill a random normal vector of a given dimension
-    static void getNormalRandomVector(const float highLimit,
-                                      const float lowLimite,
-                                      const unsigned int dimension,
-                                      float* vector);
+    static void
+        getNormalRandomVector(const float highLimit, const float lowLimit, const unsigned int dimension, float* vector);
 
     // Return a new coordinate through a SmoothStep function to avoid image artefacts
     static float smootherStep(const float x);
