@@ -1,0 +1,4 @@
+// the configured options and settings for ViewGenerator
+#define ViewGenerator_VERSION_MAJOR @ViewGenerator_VERSION_MAJOR@
+#define ViewGenerator_VERSION_MINOR @ViewGenerator_VERSION_MINOR@
+#cmakedefine USE_BITMAPENCODER

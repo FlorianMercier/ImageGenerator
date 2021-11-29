@@ -1,2 +1,3 @@
-# Ignore Executables
+.vscode
 *.exe
+build/

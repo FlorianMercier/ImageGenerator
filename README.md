@@ -7,6 +7,7 @@ The goal of this project is to randomly generate landscape images.
 ## Table of Contents <!-- omit in toc -->
 
 - [Project environment](#project-environment)
+- [Managing build process](#managing-build-process)
 - [Generate Bitmap Images](#generate-bitmap-images)
   - [Little-endian format](#little-endian-format)
   - [Bitmap file header](#bitmap-file-header)
@@ -44,12 +45,24 @@ The goal of this project is to randomly generate landscape images.
 | Purpose     | Software     |
 | :---------- | :----------- |
 | Versioning  | Git          |
+| Managing    | CMake        |
 | Indentation | Clang-format |
 | Developing  | VSCode       |
-| Language    | C++          |
+| Language    | C++20        |
 | Compiling   | MinGW        |
 | Figures     | SVG          |
 
+## Managing build process
+
+```bash
+cmake --version
+mkdir build
+cd build
+cmake ../.
+cmake --build .
+./View
+cmake --install .
+```
 ## Generate Bitmap Images
 
 Bitmap images are used as output for the generator. Their structure consists of two fixed-size headers followed by a variable-sized structure of pixels.
@@ -112,7 +125,7 @@ Here the structure of the latest header named BITMAPV5HEADER:
 ### Pixel structure
 
 The data structure contains all the image pixels. They are stored from the bottom left to the top right.
-A pixel is composed of 1 Byte for each color. Here the RGB format is used, pixels are 3 Bytes long.
+A pixel is composed of 1 Byte for each color. Pixels are 3 or 4 Bytes long depending on format.
 The padding is an array of Bytes set to 0. It is added at the end of each row so that the total width of the image is a multiple of 4 Bytes.
 
 | Offset | Size (Bytes) | Purpose      | Value (decimal) |
